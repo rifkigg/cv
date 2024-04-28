@@ -1,8 +1,121 @@
-.instagram, .github, .tiktok {
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
   background-color: #000;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+.logo a {
+  text-decoration: none;
+  color: #fff;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+}
+ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
+ul li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Main */
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url(asset/texture\ gifs.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.home {
+  font-size: 52px;
+  width: 900px;
+  color: #810ca8;
+}
+.ketik {
+  text-align: center;
+  font-size: 32px;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #c147e9; /* Cursor simulasi */
+  font-family: "Playfair Display", serif;
+  color: #e5b8f4;
+  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+  left: 50%;
+  transform: translateY(-50%);
+}
+/* Animasi mengetik */
+@keyframes typing {
+  from {
+    width: 0;
+    left: 50%;
+    transform: translateY(-50%);
+  }
+  to {
+    width: 100%;
+    left: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+/* Animasi kedipan cursor */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+    left: 50%;
+    transform: translateY(-50%);
+  }
+  50% {
+    border-color: #c147e9;
+    left: 50%;
+    transform: translateY(-50%);
+  }
+}
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.instagram,
+.github,
+.tiktok {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #2d033b;
   display: flex;
   justify-content: center;
   align-items: center;
